@@ -1,0 +1,28 @@
+package lista1;
+
+import java.util.Scanner;
+public class doisH {
+
+	public static void main(String[] args) {
+   Scanner read=new Scanner(System.in);
+   System.out.println("digite uma String e um char");
+		String str=read.nextLine();
+		String charac=read.nextLine();
+		char ch=charac.charAt(0);
+		System.out.println("O char '"+ ch+"' aparece "+ verifica(str,ch)+" na string digitada" );
+			
+	}
+ 
+
+	public static int verifica(String s,char c){
+		int cont=0;
+	 for(int i=0;i<s.length();i++){
+		 if(s.charAt(i)==c){
+			 cont++;
+		 }
+	 }
+	 
+	 return cont;
+		
+	}
+}

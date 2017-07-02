@@ -1,0 +1,22 @@
+package lista1;
+
+import java.util.Scanner;
+public class doisH {
+
+	public static void main(String[] args) {
+   Scanner read=new Scanner(System.in);
+   System.out.println("digite uma String.");
+		String str=read.nextLine();
+	
+		System.out.println("A tring maiuscula é " + maiusculo(str));
+	}
+ 
+
+	public static String maiusculo(String s){
+		
+	 s=s.toUpperCase();
+	 
+	 return s;
+		
+	}
+}

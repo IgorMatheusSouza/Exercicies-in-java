@@ -1,0 +1,30 @@
+package testproject;
+
+import java.util.Scanner;
+
+public class myProject{
+	
+	public static void main(String[] arg){
+		Scanner read=new Scanner(System.in);
+		
+		System.out.println("Quantas vezes deseja lança o dado?");
+		int n;
+		int lance;
+		int i;
+		n=read.nextInt();
+		
+		int[] dado=new int[6];
+		
+			for(i=0;i<n;i++){
+				
+				lance=(int)Math.floor(Math.random()*6);
+				dado[lance]+=1;
+			}
+			System.out.println("Posição 1 "+dado[0]);
+			System.out.println("Posição 2 "+dado[1]);
+			System.out.println("Posição 3 "+dado[2]);
+			System.out.println("Posição 4 "+dado[3]);
+			System.out.println("Posição 5 "+dado[4]);
+			System.out.println("Posição 6 "+dado[5]);}
+}
+	

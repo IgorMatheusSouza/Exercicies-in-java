@@ -1,0 +1,33 @@
+package lista1;
+
+import java.util.Scanner;
+public class doisH {
+
+	public static void main(String[] args) {
+   Scanner read=new Scanner(System.in);
+   System.out.println("digite um nome.");
+		String str1=read.nextLine();
+		System.out.println("As iniciais do nome são " + maiusculo(str1));
+	}
+ 
+
+	public static String maiusculo(String s){
+		String str=""+ s.charAt(0);
+		s=s.replaceAll(" de", "");
+		s=s.replaceAll(" e", "");
+		s=s.replaceAll(" da", "");
+		s=s.replaceAll(" dos", "");
+		s=s.replaceAll(" das", "");
+	
+			for(int i=0;i<s.length()-1;i++){
+		
+				if(s.charAt(i)==' '){
+					
+					str+= s.charAt(i+1);
+				}
+			}	
+	 str=str.toUpperCase();
+	 return str;
+		
+	}
+}

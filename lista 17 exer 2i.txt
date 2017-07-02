@@ -1,0 +1,42 @@
+package lista1;
+import java.util.*;
+import java.util.Scanner;
+public class doisH {
+
+	public static void main(String[] args) {
+Scanner read=new Scanner(System.in);
+		ArrayList <String> favoritos= new ArrayList<String>();
+		String [] nomes=new String []{"meu amigo","dds is back","saudades","cavalo branco","they're not here","hi! my old niece","the shark came back","everything","I believe","everything and nothing","I believe, but just sometimes kkkk","Don't be afraid","it's not fair"};
+		boolean s=true;
+		
+		System.out.println("lista de epsódios");
+		
+		for (int i=0;i < nomes.length;i++){
+			System.out.println(nomes[i]);
+		};
+		System.out.println("digite os episódios que deseja adicionar a lista de assistir mais tarde(para sair digite sair)");
+	
+		while(s){
+			String filme=read.nextLine();
+			filme=filme.toLowerCase();
+			for (int i=0;i < nomes.length;i++){
+					if(nomes[i].toLowerCase().contains(filme)){
+						favoritos.add(nomes[i]);
+					};
+				
+			};
+			if(filme.equals("sair")){
+				break;
+			}
+		};
+		System.out.println("os epsódios escolhidos pra assistir mais tarde");
+		
+		for (int i=0;i < favoritos.size();i++){
+			System.out.println(favoritos.get(i));
+				
+		};
+			
+			
+	}
+
+}

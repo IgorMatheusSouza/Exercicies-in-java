@@ -1,0 +1,28 @@
+package lista1;
+import java.util.Scanner;
+public class doisG {
+
+	public static void main(String[] args) {
+		Scanner read=new Scanner(System.in);
+			String [] nomes=new String [10];
+		System.out.println("digite o nome de 10 filmes");
+		
+		
+		for(int i=0;i<nomes.length;i++){
+			nomes[i]=read.nextLine();
+		}
+		
+		System.out.println("Digite a palvra que deseja buscar.");
+		String palavra=read.nextLine();
+		System.out.println("Os filmes abaixo contém a palavra digitada.");
+		for(int i=0;i<nomes.length;i++){
+			if(nomes[i].toLowerCase().contains(palavra) || nomes[i].contains(palavra.toLowerCase())){
+				System.out.println(nomes[i]);
+			
+			}
+		}
+		
+		
+	}
+
+}

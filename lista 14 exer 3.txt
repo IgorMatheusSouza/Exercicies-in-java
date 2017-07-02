@@ -1,0 +1,39 @@
+package testproject;
+
+import java.util.Scanner;
+
+public class myProject {
+	
+	 public static void main(String[] args) {
+		int a;
+		int b;
+		int c;
+		double d;
+		Scanner entrada= new Scanner(System.in);
+		
+		System.out.println("Digite os valores A, B, C.");
+		a=entrada.nextInt();
+		b=entrada.nextInt();
+		c=entrada.nextInt();
+		
+		d=calcular(a,b,c);
+		
+		System.out.println(d);
+		System.out.println(calcular2(a,b,c,d));
+		System.out.println(calcular3(a,b,c,d));
+	} 
+	 
+	 public static double calcular(int a,int b,int c){
+		 double delta=(b*b)-4*a*c;
+		 return delta;
+	 }
+	 
+	 public static double calcular2(int a,int b,int c,double d){
+		 double res=(-b+ Math.sqrt(d))/(2*a);
+		 return res;
+	 }
+	 public static double calcular3(int a,int b,int c,double d){
+		 double res=(-b - Math.sqrt(d))/(2*a);
+		 return res;
+	 }
+}

@@ -1,0 +1,76 @@
+
+package mypack;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+
+
+
+public class Maior {
+	 
+	
+	
+	 public static void main(String[] args) {
+		String tipo;
+		double litros;
+		double total=0;
+		Scanner entrada= new Scanner (System.in);
+		System.out.println("O que você deseja comprar A-alcool e G-gasolina?");
+		tipo= entrada.nextLine();
+		System.out.println("Quantos litros?");
+		
+		litros= entrada.nextInt();
+		System.out.println(tipo);
+		System.out.println(litros);
+		
+		if(tipo=="A"||tipo=="a"){
+			
+			if(litros >=20){
+				total= litros * 1.90;
+				total= total * 0.95;
+			};
+			if(litros <20){
+				total= litros * 1.90;
+				total= total * 0.97;
+			};
+			
+			System.out.println("O total a pagar é "+total);
+			
+		};
+		
+		if(tipo=="G"||tipo=="g"){
+			if(litros >=20){
+				total= litros * 2.50;
+				total= total * 0.94;
+			};
+			if(litros <20){
+				total= litros * 2.50;
+				total= total * 0.96;
+			};	
+			
+			
+		};
+		
+		
+		
+		 
+		 
+		 
+	
+	}
+	 
+}
+	 
+		 
+		 
+		 
+		 
+		 
+		 
+
+	 				
+	 

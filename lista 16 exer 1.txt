@@ -1,0 +1,52 @@
+
+package mypack;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+
+
+
+public class Maior {
+	 
+	
+	
+	 public static void main(String[] args) {
+		 Scanner vet = new Scanner (System.in);  
+         int v[] = new int[10];
+         int i;
+         System.out.println("complete o vetor.");
+         	for(i=0;i<10;i++){
+         		v[i]=vet.nextInt();
+         	}
+         int v2[] =ordena(v);
+         	for(i=0;i<10;i++){
+         		System.out.println(v2[i]);
+         	}
+	 }
+    public static int[] ordena(int[] v){ 
+    	int i;
+    	int cont=0;
+    	int v2[] = new int[10];
+    	
+    	for(i=9;i>=0;i--){
+    		v2[cont]=v[i];
+    		cont++;
+    		
+    		
+    	}
+    	
+    	return v2;
+         
+             }              
+          
+ }
+		 
+		 
+		 
+
+	 				
+	 

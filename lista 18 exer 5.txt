@@ -1,0 +1,37 @@
+package lista1;
+
+import java.util.Scanner;
+public class doisH {
+
+	public static void main(String[] args) {
+   Scanner read=new Scanner(System.in);
+   	System.out.println("digite o login");
+		String login=read.nextLine();
+	System.out.println("digite a senha.");
+   		String passWord=read.nextLine();
+   	
+   		boolean t= verify(login,passWord);
+  
+  
+   		if(t){
+   			System.out.println("Bem vindo");
+   		}
+   		else{
+   			System.out.println("Login e/ou Senha incorretos!");
+   		}
+  	}
+	
+ 
+
+	public static boolean verify(String l, String p){
+		boolean s=false;
+		if(l.equals("admin")&&p.equals("admin")){
+			s=true;
+		}
+		
+	
+			
+	 return s;
+		
+	}
+}

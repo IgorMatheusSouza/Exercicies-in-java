@@ -1,0 +1,47 @@
+package testproject;
+
+import java.util.Scanner;
+
+public class myProject{
+	
+	public static void main(String[] arg){
+		Scanner read=new Scanner(System.in);
+		String[] gabarito=new String[10];
+		int i;
+		int qAlunos;
+		
+		System.out.println("Digite o gabarito "+ Math.floor(Math.random()*7));
+
+		
+		;
+		
+		for(i=0;i<10;i++){
+		System.out.println("Questão "+ (i+1));
+		gabarito[i]=read.next();	
+		
+		}
+		
+		System.out.println("Digite Quantos alunos fizeram a prova.");
+		qAlunos=read.nextInt();
+		String[][] alunos= new String[qAlunos][10];
+		int i2;
+		
+		for(i=0;i<qAlunos;i++){
+			int acertos=0;
+				for(i2=0;i2<10;i2++){
+					System.out.println("Questão "+ (i2+1)+" do aluno "+(i+1));
+					alunos[i][i2]=read.next();
+					
+					
+					if(alunos[i][i2].equals(gabarito[i2])){
+						
+						acertos+=1;
+					}
+				
+			}
+		System.out.println("O aluno "+(i+1)+" teve "+ acertos+" acertos.");
+		}
+		
+	}
+}
+	

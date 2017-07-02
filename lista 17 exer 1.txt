@@ -1,0 +1,40 @@
+package lista17;
+import java.util.Scanner;
+
+public class exc1 {
+
+	public static void main(String[] args) {
+		Scanner read=new Scanner(System.in);
+		String str1,str2;
+		System.out.println("Informe uma palavra:");
+		str1=read.nextLine();
+		System.out.println("Informe outra palavra:");
+		str2=read.nextLine();
+		int menorString;
+		
+		if(str1.length()==str2.length()){
+			menorString=str1.length();
+		}
+		else{
+			if(str1.length()>str2.length()){
+				menorString=str2.length();
+			}
+			else{
+				menorString=str1.length();
+			}
+			
+		};
+		int cont=0;
+		for(int i=0; i<menorString;i++){
+			if(str1.charAt(i)!=str2.charAt(i)){
+				System.out.println("na posição "+ (i+1) +" elas nao coincidem.");
+				cont++;
+			};
+			
+		};
+		if(cont==0){
+		System.out.println("They are equal");	
+		}
+	}
+
+}

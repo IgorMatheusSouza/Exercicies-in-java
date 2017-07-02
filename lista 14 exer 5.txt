@@ -1,0 +1,30 @@
+package testproject;
+
+import java.util.Scanner;
+
+public class myProject {
+	
+ public static void main(String[] args) {
+		Float r;
+		int i;
+	
+		Scanner entrada= new Scanner(System.in);
+		
+		System.out.println("Digite um número real e um inteiro.");
+		r=entrada.nextFloat();
+		i=entrada.nextInt();
+
+		System.out.println(calcular(r,i));
+
+	} 
+	 
+ public static double calcular(double r,int i){
+		 double res;
+		 
+		 res= Math.pow(r,i);
+		 return res;
+		 
+	 }
+	 
+	
+}

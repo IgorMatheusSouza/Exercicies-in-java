@@ -1,0 +1,45 @@
+
+package mypack;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+
+
+
+public class Maior {
+	 
+	
+	
+	 public static void main(String[] args) {
+		 Scanner vet = new Scanner (System.in);  
+         int elementos[] = new int[10];  
+         for (int i=0; i<10; i++){  
+             System.out.printf ("Informe o numero %d:",i+1);  
+             elementos[i] = vet.nextInt();  
+         }  
+         ordena(elementos);
+         System.out.println("Numeros Ordenados: ");
+         for (int numero : elementos){
+        	 System.out.println(numero);
+         }
+     }  
+    public static void ordena(int elementos[]){  
+         int i, i2,aux;  
+             for(i =0; i<10; i++){  
+                 for(i2 =0; i2 <9; i2++){  
+                    if(elementos[i2]> elementos[i2+1]){  
+                         aux = elementos[i2];  
+                         elementos[i2] = elementos[i2+1];  
+                         elementos[i2+1] = aux;  
+                     }  
+                 }  
+             }              
+    }      
+ }
+		 
+		 
+		 

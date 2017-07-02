@@ -1,0 +1,42 @@
+package lista17;
+import java.util.Scanner;
+
+public class exc1 {
+
+	
+
+	public static void main(String[] args) {
+		Scanner read=new Scanner(System.in);
+		int quant;
+		String sinopse;
+		
+		System.out.println("Informe o nome do filme.");
+			sinopse=read.nextLine();
+			StringBuilder s = new StringBuilder(sinopse);
+			for(int i=0;i<sinopse.length();i++){
+				if(i==0){
+					String upperSrt=""+sinopse.charAt(i);
+					upperSrt=upperSrt.toUpperCase();
+					s.setCharAt(i,upperSrt.charAt(0));
+					
+				};
+				if(sinopse.charAt(i)==' '){
+					
+					String upperSrt=""+sinopse.charAt(i+1);
+					upperSrt=upperSrt.toUpperCase();
+					s.setCharAt(i+1,upperSrt.charAt(0));
+					
+				}
+				
+				
+			}
+		System.out.println(s);
+	
+	
+		
+		
+			
+		
+	}
+
+}

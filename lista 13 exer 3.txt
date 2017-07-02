@@ -1,0 +1,157 @@
+
+package mypack;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+
+
+
+public class Maior {
+	 
+	
+	
+	 public static void main(String[] args) {
+	 String resposta;
+	 int s=0;
+	 Scanner entrada = new Scanner(System.in);       
+	 System.out.println("Telefonou para a vítima?");
+	 	resposta= entrada.nextLine();
+	 	s= s + methodresp(resposta);
+	 System.out.println("Esteve no local do crime?");
+	 	resposta= entrada.nextLine();
+	 	s= s + methodresp(resposta);
+	 System.out.println("Mora perto da vítima?");
+	 	resposta= entrada.nextLine();
+	 	s= s + methodresp(resposta);
+	 System.out.println("Devia para a vítima?");
+	 	resposta= entrada.nextLine();
+	 	s= s + methodresp(resposta);
+	 System.out.println("Já trabalhou com a vítima?");
+	 	resposta= entrada.nextLine();
+	 	s= s + methodresp(resposta);
+	 if(s<2){
+		 System.out.println("Inocente");
+	 }
+	 if(s==2){
+		 System.out.println("suspeita");
+	 }
+	 if(s==4 || s==3){
+		 System.out.println("cumplice");
+	 }
+	 if(s==5){
+		 System.out.println("culpado");
+	 }
+	
+	 										}
+	 
+		 
+		 
+		 
+		 
+		 
+		 
+
+	 				
+	 
+public static int methodresp(String resp){
+	
+	int cont=0;									
+
+switch (resp) {
+case "sim":
+case "SIM":
+case "Sim":
+case "S":
+case "s":
+cont=1;
+return  cont;
+default:
+	return  cont;
+
+
+
+}
+}
+}
+package mypack;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+
+
+
+public class Maior {
+	 
+	
+	
+	 public static void main(String[] args) {
+	 String resposta;
+	 int s=0;
+	 Scanner entrada = new Scanner(System.in);       
+	 System.out.println("Telefonou para a vítima?");
+	 	resposta= entrada.nextLine();
+	 	s= s + methodresp(resposta);
+	 System.out.println("Esteve no local do crime?");
+	 	resposta= entrada.nextLine();
+	 	s= s + methodresp(resposta);
+	 System.out.println("Mora perto da vítima?");
+	 	resposta= entrada.nextLine();
+	 	s= s + methodresp(resposta);
+	 System.out.println("Devia para a vítima?");
+	 	resposta= entrada.nextLine();
+	 	s= s + methodresp(resposta);
+	 System.out.println("Já trabalhou com a vítima?");
+	 	resposta= entrada.nextLine();
+	 	s= s + methodresp(resposta);
+	 if(s<2){
+		 System.out.println("Inocente");
+	 }
+	 if(s==2){
+		 System.out.println("suspeita");
+	 }
+	 if(s==4 || s==3){
+		 System.out.println("cumplice");
+	 }
+	 if(s==5){
+		 System.out.println("culpado");
+	 }
+	
+	 										}
+	 
+		 
+		 
+		 
+		 
+		 
+		 
+
+	 				
+	 
+public static int methodresp(String resp){
+	
+	int cont=0;									
+
+switch (resp) {
+case "sim":
+case "SIM":
+case "Sim":
+case "S":
+case "s":
+cont=1;
+return  cont;
+default:
+	return  cont;
+
+
+
+}
+}
+}

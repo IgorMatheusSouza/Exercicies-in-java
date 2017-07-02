@@ -1,0 +1,33 @@
+package testproject;
+
+import java.util.Scanner;
+
+public class myProject {
+	
+	 public static void main(String[] args) {
+		
+		 Scanner entrada= new Scanner(System.in);
+		int dias;
+		int meses;
+		int anos;
+		
+		 System.out.println("Digite a idade em dias, meses e anos.");
+		 dias=entrada.nextInt();
+		 meses=entrada.nextInt();
+		 anos=entrada.nextInt();
+		 System.out.println(calcular(dias,meses,anos));
+	} 
+
+	 public static int calcular(int d,int m,int a){
+		 int total;
+		 total=d+(m*30)+(a*365);
+		 return total;
+		 
+		 
+		 
+	 };
+	 
+	 
+	 
+	 
+}

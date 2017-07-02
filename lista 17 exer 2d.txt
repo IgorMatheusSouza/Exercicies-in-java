@@ -1,0 +1,49 @@
+package lista17;
+import java.util.Scanner;
+
+public class exc1 {
+
+	
+
+	public static void main(String[] args) {
+		Scanner read=new Scanner(System.in);
+		int quant;
+		String sinopse;
+		System.out.println("Informe quantos diretores.");
+			quant=read.nextInt();
+		String[] diretores= new String [quant];
+		String[] iniciais= new String [quant];
+			sinopse=read.nextLine();
+		System.out.println("Informe os nomes dos diretores.");
+		
+		
+		
+		for(int i=0;i<quant;i++){
+			diretores[i]=read.nextLine();
+		}
+		for(int J=0;J<quant;J++){
+			for(int i=0;i<diretores[J].length();i++){
+				
+				if(i==0){
+					iniciais[J]=""+diretores[J].charAt(i);
+
+					}
+				if(diretores[J].charAt(i)==' '){
+					
+					iniciais[J]+=diretores[J].charAt(i+1);
+					
+					}
+			
+			
+			}
+		}
+		
+		for(int i=0;i<quant;i++){
+		System.out.println(iniciais[i].toUpperCase());
+		}
+		
+			
+		
+	}
+
+}

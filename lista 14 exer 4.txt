@@ -1,0 +1,33 @@
+package testproject;
+
+import java.util.Scanner;
+
+public class myProject {
+	
+	 public static void main(String[] args) {
+		int s;
+		int m;
+		int h;
+	
+		Scanner entrada= new Scanner(System.in);
+		
+		System.out.println("Digite os valores em segundos,minutos e horas.");
+		s=entrada.nextInt();
+		m=entrada.nextInt();
+		h=entrada.nextInt();
+
+
+		System.out.println(calcular(s,m,h));
+
+	} 
+	 
+	 public static int calcular(int s,int m,int h){
+		 int res;
+		 
+		 res= s+ (m*60)+(h*36010);
+		 return res;
+		 
+	 }
+	 
+	
+}

@@ -1,0 +1,23 @@
+package lista1;
+
+import java.util.Scanner;
+public class doisH {
+
+	public static void main(String[] args) {
+   Scanner read=new Scanner(System.in);
+   	System.out.println("digite uma frase.");
+	String str=read.nextLine();
+	System.out.println("a nova frase é");
+	System.out.println(add(str));
+ 
+	}
+	public static String add(String s){
+		StringBuilder sNew= new StringBuilder(s);
+			sNew.append("\"- mestre cuca");
+			sNew.insert(5, "\"");
+	
+	s=""+sNew; //converter de StringBuilder para String
+	 return s;
+		
+	}
+}

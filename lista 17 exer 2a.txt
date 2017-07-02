@@ -1,0 +1,30 @@
+package lista17;
+import java.util.Scanner;
+
+public class exc1 {
+
+	
+
+	public static void main(String[] args) {
+		Scanner read=new Scanner(System.in);
+		String sinopse,str2;
+		System.out.println("Informe uma sinopse :");
+		sinopse=read.nextLine();
+		StringBuilder sinopse2 = new StringBuilder(sinopse);
+		sinopse2.append("|");
+		int i=0,cont=0;
+		for(i=0;i<1000;i++){
+				
+		
+				if(sinopse2.charAt(i)=='|'){
+					break;
+				};
+				if(sinopse2.charAt(i)!=' '){
+				cont++;
+				}
+		}
+		
+		System.out.println("o total de letras é :"+ cont);
+	}
+
+}

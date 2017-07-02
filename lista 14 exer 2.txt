@@ -1,0 +1,45 @@
+package testproject;
+
+import java.util.Scanner;
+
+public class myProject {
+	
+	 public static void main(String[] args) {
+		
+		 Scanner entrada= new Scanner(System.in);
+		int n;
+		
+		
+		 System.out.println("Digite a idade em dias, meses e anos.");
+		 n=entrada.nextInt();
+		 System.out.println(calcular(n));
+	} 
+
+	 public static boolean calcular(int num){
+		boolean res=false;
+		int contador=0;
+		 int i;
+		for(i=1;i<num;i++){
+				if(num%i==0){
+			
+					contador +=i;
+		
+			
+				}
+		
+		
+		}
+		
+		if(contador==num){
+			res=true;
+		}
+		return res;
+		 
+		 
+		 
+	 };
+	 
+	 
+	 
+	 
+}

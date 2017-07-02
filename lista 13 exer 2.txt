@@ -1,0 +1,151 @@
+
+
+package mypack;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+public class Maior {
+
+	
+	 public static void main(String[] args) {
+	        
+		 methodValidar();
+	 }
+public static void methodValidar(){
+		 
+		 Scanner entrada= new Scanner(System.in);
+	        System.out.println("Digite a Data do seu niver:");
+		    int dia= entrada.nextInt();
+	        int mes= entrada.nextInt();
+	        int ano= entrada.nextInt();
+	        int i;
+	        boolean bi= false;   
+	        
+	         
+	       
+	        if (ano>2017){
+	        	System.out.println("Data inválida");
+	      
+	       
+	        }
+
+	        if (ano<2017){
+	 
+		    
+	      for(i=1004;i<2018;i+=4){
+	        	if(i==ano){
+	        	bi=true;
+	        		
+	        	}
+	        	}
+	      
+	        switch (mes){
+	        case 1:
+	        case 3:
+	        case 5:
+	        case 7:
+	        case 8:
+	        case 10:
+	        case 12:
+	        	 if ( dia > 0 && dia < 32){
+	     	        System.out.println("Data válida");
+	     	        
+	     	        }
+	        	 else {
+	        			System.out.println("Data inválida");
+	        		}
+	        break;
+	        case 4:
+	        case 6:
+	        case 9:
+	        case 11:
+	       	 if ( dia > 0 && dia < 31){
+	     	        System.out.println("Data válida");
+	     	        
+	     	        }
+	     	       else {
+	        			System.out.println("Data inválida");
+	        		}
+	     	break;
+	        case 2:
+	        	
+	        	if (bi==false){
+	        		if (dia > 0 && dia < 29){
+	         	        System.out.println("Data válida");
+	         	        
+	         	        }
+	        				  }
+	         
+	        	if (bi==true && dia > 0 && dia < 30){
+	         	        System.out.println("Data válida");
+	         	        
+	        										}
+	        	else {
+	        			System.out.println("Data inválida");
+	        		 }
+	        	
+	        	
+	        	default:System.out.println("Data inválida");
+	        		
+	        			}//fim do switch
+	        
+	        
+	       
+	        	
+	        	
+	        
+	        	
+	        
+	        }
+	 
+
+}
+}
+
+
+System.out.println("Data inválida");
+	        		}
+	     	break;
+	        case 2:
+	        	
+	        	if (bi==false){
+	        		if (dia > 0 && dia < 29){
+	         	        System.out.println("Data válida");
+	         	        
+	         	        }
+	        	}
+	         
+	        	if (bi==true && dia > 0 && dia < 30){
+	         	        System.out.println("Data válida");
+	         	        
+	         	        }
+	        	else {
+	        			System.out.println("Data inválida");
+	        		}
+	        		
+	        	}
+	        
+	        
+	        if (mes <1 && mes >31){
+	        
+	        	System.out.println("Data inválida");
+	        	
+	        }
+	        	
+	        }
+	 
+
+}
+}
+
+
+	        
+	        
+
+
+	
+

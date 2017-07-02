@@ -1,0 +1,29 @@
+package testproject;
+
+import java.util.Scanner;
+
+public class myProject{
+	
+	public static void main(String[] arg){
+		Scanner read= new Scanner(System.in);
+		int valor;
+		System.out.println("Digite o valor");
+		valor=read.nextInt();
+		
+		System.out.println("O valor absoluto é "+ myFunction(valor));
+		
+		
+	}
+	
+	public static double myFunction(int v){
+		double res=v;
+		
+		if(v<0){
+			res= -v;
+		}
+		
+		return res;
+	}
+	
+	
+}

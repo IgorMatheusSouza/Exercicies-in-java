@@ -1,0 +1,46 @@
+package testproject;
+
+import java.util.Scanner;
+
+public class myProject{
+	
+	public static void main(String[] arg){
+		
+		
+		
+		
+		Scanner read=new Scanner(System.in);
+		
+		System.out.println("Digite a idade e a altura de 30 alunos");
+		int[] idade=new int [30];
+		double[] altura=new double [30];
+		int i;
+		
+		for(i=0;i<30;i++){
+		
+	    System.out.println("Digite a idade e a altura do aluno " + (i+1) +": ");
+		idade[i] = read.nextInt();
+		altura[i] = read.nextFloat();
+		
+	
+		}
+	
+	double mediaAltura=0;
+	int cont=0;
+	
+		for(i=0;i<30;i++){	
+		  mediaAltura += altura[i];
+		}
+	
+		mediaAltura=mediaAltura/30;
+		
+		
+		for(i=0;i<30;i++){	
+			  if(altura[i] < mediaAltura && idade[i]<13){
+				  cont+=1;
+				  
+			  }
+			}
+		System.out.println("Quantide de alunos abaixo da media de altura é :"+cont);
+	
+	}}

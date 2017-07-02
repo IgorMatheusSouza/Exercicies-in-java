@@ -1,0 +1,57 @@
+
+package mypack;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+
+
+
+public class Maior {
+	 
+	
+	
+	 public static void main(String[] args) {
+		Scanner entrada= new Scanner(System.in);
+    double altura;
+
+    double mAlto=0;
+    double mBaixo=100000;
+	int alunoBaixo=0;
+	int alunoAlto=0;
+	int i;
+    int aluno;
+		
+	for(i=0;i<10;i++){
+		System.out.println("Digite o número do aluno e em seguida digite sua altura.");
+		aluno=entrada.nextInt(); 
+		altura=entrada.nextFloat();
+		
+		if(altura>mAlto){
+			mAlto=altura;
+			alunoAlto=aluno;
+		}
+		if(altura<mBaixo){
+			mBaixo=altura;
+			alunoBaixo=aluno;
+		}
+		
+
+	}	 
+System.out.println("O aluno mais alto é o "+alunoAlto+" e sua altura é "+mAlto);
+System.out.println("O aluno mais Baixo é o "+alunoBaixo+" e sua altura é "+mBaixo);
+	 
+}
+}
+		 
+		 
+		 
+		 
+		 
+		 
+
+	 				
+	 

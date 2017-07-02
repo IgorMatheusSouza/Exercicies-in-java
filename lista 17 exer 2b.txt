@@ -1,0 +1,23 @@
+package lista17;
+import java.util.Scanner;
+
+public class exc1 {
+
+	public static void main(String[] args) {
+		Scanner read=new Scanner(System.in);
+		String sinopse,str2;
+		System.out.println("Informe uma sinopse:");
+		sinopse=read.nextLine();
+		int i=0,cont=1;
+		for(i=0;i<sinopse.length();i++){
+				
+				
+				if(sinopse.charAt(i)==' '){
+					cont++;
+				};
+		}
+		
+		System.out.println("o total de palavras é :"+ cont);
+	}
+
+}

@@ -1,0 +1,73 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author labccet
+ */
+public class JavaApplication3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+	int idade;
+        int i;
+	int i15 = 0;
+        int i30=0;
+	int i45=0;
+        int i60=0;
+        int im60=0;
+        
+        
+        for(i=1;i<16;i++){
+		System.out.println("digite a idade.");
+                
+                idade= entrada.nextInt();
+                
+		if(idade<=15 ){
+                i15 = i15 + 1;
+                }
+                if(idade >16 && idade <=30 ){
+                i30=i30+1;
+                }
+                if(idade>30 && idade<=45 ){
+                i45= i45+1;
+                }
+                if(idade>45 && idade<=60 ){
+                i45=i45+1;
+                }
+                 if(idade>60){
+               im60=im60 +1;
+                }
+                
+    }
+        
+        double p15;
+        double p30;
+        double p45;
+        double p60 ;
+        double pm60; 
+        
+        p15 = i15 * 6.66;
+        p30 = i30 * 6.66;
+        p45 = i45 * 6.66;
+        p60 = i60 * 6.66;
+        pm60 = im60 * 6.66;
+        
+        
+    System.out.println("A quantidade de pessoas com idade menor que 15 é:"+i15+" isso equivale a "+p15+" porcento do total.");
+    System.out.println("A quantidade de pessoas com idade menor que 15 é"+i30+" isso equivale a "+p30+" porcento do total.");
+    System.out.println("A quantidade de pessoas com idade menor que 15 é"+i45+" isso equivale a "+p45+" porcento do total.");
+    System.out.println("A quantidade de pessoas com idade menor que 15 é"+i60+" isso equivale a "+p60+" porcento do total.");
+    System.out.println("A quantidade de pessoas com idade menor que 15 é"+im60+" isso equivale a "+pm60+" porcento do total.");
+}
+
+}

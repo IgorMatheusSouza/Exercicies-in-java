@@ -1,0 +1,50 @@
+package lista;
+import java.util.Scanner;
+import java.util.*;
+public class test {
+
+	public static void main(String[] args){
+		
+		ArrayList<String>  div= new ArrayList<String>();
+		int i;
+		char letra;
+		
+		Scanner entrada= new Scanner(System.in);
+		System.out.println("Digite 10 nomes");
+		
+		for (int j = 0; j < 10; j++) {
+			div.add(entrada.nextLine());
+			
+		}
+		ArrayList<Integer> noRepeat=new ArrayList<Integer>();
+		
+		for (int j = 0; j < 10; j++) {
+			
+			for (int j2 = 0; j2 < 10; j2++) {
+				
+				if(div.get(j).charAt(0) > div.get(j2).charAt(0)){
+					boolean valid=true;
+					
+					for (int k = 0; k < noRepeat.size(); k++) {
+							if(j==noRepeat.get(k)){
+							valid=false;
+							}
+						}
+					
+					
+					if(valid){
+					div.add(j,div.get(j2));
+					div.remove(j2+1);
+					}
+					noRepeat.add(j);
+				}
+				
+				
+			}
+			
+		}
+		System.out.println(div);
+		
+	}
+
+}

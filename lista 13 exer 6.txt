@@ -1,0 +1,44 @@
+
+package mypack;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+
+
+
+public class Maior {
+	 
+	
+	
+	 public static void main(String[] args) {
+     double si= 1000.00;
+     double sl;
+	 double porcento = 0.015;
+	 int ano;
+	 System.out.println("O Aumento do salario");
+	 System.out.println("salario Inicial " + si);
+	 sl = si + (si*porcento);
+	 System.out.println("Ano: 1996 salario: " + sl);
+	 
+	 for(ano=1997;ano<=2017;ano++){
+	 porcento= porcento * 2;
+	 sl= sl + (sl * porcento);  
+	 System.out.print("Ano: " + ano);
+	 }
+	 
+	 
+}
+}
+		 
+		 
+		 
+		 
+		 
+		 
+
+	 				
+	 

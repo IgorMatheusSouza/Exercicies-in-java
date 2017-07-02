@@ -1,0 +1,31 @@
+package testproject;
+
+import java.util.Scanner;
+
+public class myProject{
+	
+	public static void main(String[] arg){
+		
+		
+		
+		
+		Scanner read=new Scanner(System.in);
+		
+		System.out.println("Digite caracteres de um numero contendo 5 posiçoes");
+		String[] extenso=new String [5];
+		int i,i2;
+		int x;
+		
+		for(i=0;i<5;i++){
+		
+	    System.out.print("Digite um letra para salvar no posição " + (i+1) +": ");
+		extenso[i] = read.next();
+	
+	
+		}
+	
+		System.out.println("O numero por extenso é: " + extenso[0] + "" + extenso[1] + "" + extenso[2] + "" + extenso[3] + "" + extenso[4]);
+	
+
+	
+	}}

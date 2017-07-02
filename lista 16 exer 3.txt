@@ -1,0 +1,61 @@
+
+package mypack;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+
+
+
+public class Maior {
+	 
+	
+	
+	 public static void main(String[] args) {
+		 Scanner read = new Scanner (System.in);  
+       double [] v=new double[]{1.2,1.5,1.8,1.9,1.6,1.5,1.75,1.78,1.89,1.67};
+       double [] v2=new double[10];
+       double media;
+       int i;
+       media=ordena(v);
+       v2=calcular(v,media);
+       
+       for(i=0;i<v2.length;i++){
+    	   if(v2[i]>0){
+    	   	System.out.println(v2[i]);
+    	   }
+       }
+       }
+	
+    public static double ordena(double[] alturas){
+    	int i;
+    	double cont=0;
+    	for(i=0;i<alturas.length;i++){
+    		cont+=alturas[i];
+    	}
+    	cont=cont/alturas.length;
+    	return cont;
+    	
+    }
+
+    public static double[] calcular(double[] alturas,double med){
+    	int i;
+    	double [] alMedia=new double[10];
+    	int cont=0;
+    	for(i=0;i<alturas.length;i++){
+    		if(alturas[i]>med){
+    			alMedia[cont]=alturas[i];
+    			cont++;
+    		}
+    	}
+    	return alMedia;
+    	
+    }
+} 
+		 
+
+	 				
+	 

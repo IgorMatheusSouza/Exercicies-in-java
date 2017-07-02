@@ -1,0 +1,50 @@
+package testproject;
+
+import java.util.Scanner;
+
+public class myProject{
+	
+	public static void main(String[] arg){
+		Scanner read= new Scanner(System.in);
+		int J1;
+		int J2;
+		System.out.println("Jogador 1, assuma que o número 0 representa pedra, 1 representa papel e 2 representa tesoura");
+		J1=read.nextInt();
+		System.out.println("Jogador 2, assuma que o número 0 representa pedra, 1 representa papel e 2 representa tesoura");
+		J2=read.nextInt();
+		System.out.println("O ganhador é "+ myFunction(J1,J2));
+	}
+	
+	public static int myFunction(int p1,int p2){
+		
+		if(p1==p2){
+			return 0;
+		}
+		
+		if(p1==0 && p2==2){
+			return 1;
+		}
+		if(p1==0 && p2==1){
+			return 2;
+		}
+		if(p1==1 && p2==0){
+			return 1;
+		}
+		if(p1==1 && p2==2){
+			return 2;
+		}
+		if(p1==2 && p2==0){
+			return 2;
+		}
+		if(p1==2 && p2==1){
+			return 1;
+		}
+		
+		else{
+			return 0;
+		}
+		
+	}
+	
+	
+}

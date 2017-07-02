@@ -1,0 +1,22 @@
+package lista17;
+import java.util.Scanner;
+
+public class exc1 {
+
+	
+
+	public static void main(String[] args) {
+		Scanner read=new Scanner(System.in);
+		String sinopse,str2;
+		System.out.println("Informe uma sinopse :");
+		sinopse=read.nextLine();
+		
+	sinopse=sinopse.replace("    "," ");
+	sinopse=sinopse.replace("   "," ");
+	sinopse=sinopse.replace("  "," ");
+	
+			
+		System.out.println("o total de letras é :"+ sinopse);
+	}
+
+}
